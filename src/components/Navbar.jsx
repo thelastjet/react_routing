@@ -1,41 +1,38 @@
-import * as React from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const Navbar = (props) => {
-  return (
-    <nav
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        borderBottom: "2px solid blue",
-        padding: "1rem",
-      }}
-    >
-      <h4 style={{ margin: "0px" }}>React Routing</h4>
-      <ul
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          listStyle: "none",
-          flexGrow: "1",
-          margin: "0px",
-        }}
-      >
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/products">Products</Link>
-        </li>
-        <li>
-          <Link to="/posts">Posts</Link>
-        </li>
-        <li>
-          <Link to="/admin">Admin</Link>
-        </li>
-      </ul>
-    </nav>
-  );
-};
+class NavBar extends Component {
+  render() {
+    return (
+      <nav className="row py-3">
+        <ul className="nav align-items-end">
+          <li>
+            <img
+              src="GhibliLogo.png"
+              alt="Studio Ghibli Logo"
+              className="img mx-2"
+              height="50px"
+            />
+          </li>
+          <li className="nav-item mx-3">
+            <Link to="/" className="nav-link text-dark">
+              Home
+            </Link>
+          </li>
+          <li className="nav-item mx-3">
+            <Link to="/films" className="nav-link text-dark">
+              Films
+            </Link>
+          </li>
+          <li className="nav-item mx-3">
+            <Link to="/people" className="nav-link text-dark">
+              People
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+}
 
-export default Navbar;
+export default NavBar;

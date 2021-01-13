@@ -1,11 +1,17 @@
-import * as React from "react";
+import React, { Component } from "react";
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     return (
-      <main>
-        <h1>Home Page</h1>
-      </main>
+      <div
+        className="rounded text-right"
+        id="jumboDiv"
+        data-toggle="tooltip"
+        data-placement="top"
+        title="Laptuna: Castle in the Sky"
+      >
+        <img src="GhibliLogo.png" alt="Studio Ghibli Logo" />
+      </div>
     );
   }
 }
