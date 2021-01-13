@@ -42,7 +42,7 @@ document.getElementById("root")
 - Say, for /films. After navigating to localhost:3000/films, you should see Studio Ghibli's list of films.
 - The data should only be loaded and displayed when you navigate to /films. You should use componentDidMount() and fetch to make this request.
 - You will use`"https://ghibliapi.herokuapp.com/films"` for the api endpoint
-- Contruct a fetch request with `.then` and `.catch`. Remember to:
+- Construct a fetch request with `.then` and `.catch`. Remember to:
   - Fetch the data
   - If a response was resolved, parse the JSON object
   - Then set the response to the state of your `Films` component
