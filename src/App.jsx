@@ -12,7 +12,7 @@ class App extends Component {
           textAlign: "center",
         }}
       >
-        <h1>React Exercise</h1>
+        <h1>React Routing</h1>
       </main>
     );
   }
