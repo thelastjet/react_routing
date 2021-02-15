@@ -18,20 +18,7 @@
 
 1. Configure React Router in your application. Use the same structure as the walkthrough during the lecture. Just make sure that it works!
 
-- Reminder `BrowserRouter`:
-
-```
-ReactDOM.render(
-<React.StrictMode>
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-</React.StrictMode>,
-document.getElementById("root")
-);
-```
-
-- is the starting point
+- Reminder `BrowserRouter` is the starting point
 
 2. Create a `Navbar` component. Import and then render the component in the `App` component (not inside the `Switch`)
 
@@ -52,6 +39,6 @@ document.getElementById("root")
 
 - At the end of these tasks, you should have at least FIVE pages in your application, and you should be able to navigate to them simply by clicking a link.
 
-## STRONGLY ENCOURAGED BONUS
+## BONUS
 
-- Convert this exercise from class components to react hooks (i.e. only use functional components).
+- Add more routes based on Studio Ghibli's api endoints.
