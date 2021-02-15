@@ -21,14 +21,13 @@
 - Reminder `BrowserRouter`:
 
 ```
-ReactDOM.render(
-<React.StrictMode>
   <BrowserRouter>
-    <App />
+    <Switch>
+      <Route>
+        <Component />
+      </Route>
+    </Switch>
   </BrowserRouter>
-</React.StrictMode>,
-document.getElementById("root")
-);
 ```
 
 - is the starting point
@@ -50,8 +49,8 @@ document.getElementById("root")
 
 5. Configure your second route. Repeat the steps from the `/films` route, but for `/people`. Use `"https://ghibliapi.herokuapp.com/people"`.
 
-- At the end of these tasks, you should have at least FIVE pages in your application, and you should be able to navigate to them simply by clicking a link.
+- At the end of these tasks, you should have at least three pages in your application, and you should be able to navigate to them simply by clicking a link.
 
-## STRONGLY ENCOURAGED BONUS
+## Bonus
 
-- Convert this exercise from class components to react hooks (i.e. only use functional components).
+- Create two more routes for `/places` and `/vehicles`.
