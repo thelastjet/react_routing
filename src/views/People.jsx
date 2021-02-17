@@ -19,7 +19,7 @@ const People = () => {
         {people.map((person) => {
           return (
             <PersonCard
-              key={person.key}
+              key={person.id}
               name={person.name}
               gender={person.gender}
               age={person.age}

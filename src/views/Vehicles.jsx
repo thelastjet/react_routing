@@ -19,7 +19,7 @@ const Vehicles = () => {
         {vehicles.map((vehicle) => {
           return (
             <VehicleCard
-              key={vehicle.key}
+              key={vehicle.id}
               name={vehicle.name}
               description={vehicle.description}
               vehicle_class={vehicle.vehicle_class}
