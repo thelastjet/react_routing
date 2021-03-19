@@ -18,7 +18,20 @@
 
 1. Configure React Router in your application. Use the same structure as the walkthrough during the lecture. Just make sure that it works!
 
-- Reminder `BrowserRouter` is the starting point
+- Reminder `BrowserRouter`:
+
+```
+ReactDOM.render(
+<React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+</React.StrictMode>,
+document.getElementById("root")
+);
+```
+
+- is the starting point
 
 2. Create a `Navbar` component. Import and then render the component in the `App` component (not inside the `Switch`)
 
@@ -29,7 +42,11 @@
 - Say, for /films. After navigating to localhost:3000/films, you should see Studio Ghibli's list of films.
 - The data should only be loaded and displayed when you navigate to /films. You should use componentDidMount() and fetch to make this request.
 - You will use`"https://ghibliapi.herokuapp.com/films"` for the api endpoint
+<<<<<<< HEAD
 - Construct a fetch request with `.then` and `.catch`. Remember to:
+=======
+- Contruct a fetch request with `.then` and `.catch`. Remember to:
+>>>>>>> 2624b1ba5889e4e5424d02731a1dcbaf199a1855
   - Fetch the data
   - If a response was resolved, parse the JSON object
   - Then set the response to the state of your `Films` component
@@ -39,6 +56,12 @@
 
 - At the end of these tasks, you should have at least FIVE pages in your application, and you should be able to navigate to them simply by clicking a link.
 
+<<<<<<< HEAD
 ## BONUS
 
 - Add more routes based on Studio Ghibli's api endoints.
+=======
+## STRONGLY ENCOURAGED BONUS
+
+- Convert this exercise from class components to react hooks (i.e. only use functional components).
+>>>>>>> 2624b1ba5889e4e5424d02731a1dcbaf199a1855

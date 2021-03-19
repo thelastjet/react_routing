@@ -1,0 +1,11 @@
+/* Add custom styling here */
+
+#jumboDiv {
+  background-image: url("Laptuna.jpg");
+  background-size: cover;
+  height: 100vh;
+  box-shadow: 0px 0px 10px black;
+}
+.container-fluid {
+  height: max-content;
+}
