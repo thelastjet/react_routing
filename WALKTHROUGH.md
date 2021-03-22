@@ -183,4 +183,4 @@
 
 ## BONUS
 
-- Add more routes based on Studio Ghibli's api endoints.
+- Add more routes based on Studio Ghibli's api endpoints.
