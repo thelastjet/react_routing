@@ -1,2 +1,31 @@
 /* Add custom styling here */
+* {
+    margin-left: 1em;
+}
 
+h1 {
+    color: white;
+}
+
+h2 {
+    color: rgb(251, 229, 229);
+}
+
+body {
+    height: max-content;
+    background-color: rgb(2, 49, 49);
+}
+
+.App-link, p {
+    color: red;
+}
+
+li {
+    color: hotpink;
+}
+
+#list {
+    -webkit-columns: 100px 4; /* Chrome, Safari, Opera */
+    -moz-columns: 100px 4; /* Firefox */
+    columns: 100px 4;
+}
