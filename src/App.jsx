@@ -5,11 +5,10 @@ import Films from './Pages/Films';
 import Home from './Pages/Home';
 import People from './Pages/People';
 import Vehicles from './Pages/Vehicles';
+import Locations from './Pages/Locations';
 
 
 const App = () => {
-
-  let image = require('./images/Studio_Ghibli_logo.png');
 
   return (
     
@@ -29,6 +28,9 @@ const App = () => {
           </Route>
           <Route path="/vehicles">
             <Vehicles />
+          </Route>
+          <Route path="/locations">
+            <Locations />
           </Route>
         </Switch>
       </main>

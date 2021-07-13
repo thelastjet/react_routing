@@ -15,18 +15,29 @@ function People(props) {
 
     return (
         <div>
-            <h1>People</h1>
+            <h1>People of Studio Ghibli</h1>
             <div id="list">
                 <ul>
                     {people.map((person) => {
-                        return <li key={person.key}>{person.name}</li>;
+                        return (
+                            <div>
+                                <li key={person.key}>{person.name}</li>
+                                <hr />
+                            </div>
+                        )
+
                     })}
                 </ul>
             </div>
-        
-
-            <Link className="App-link" exact to="/">Home</Link>
-            <Link className="App-link" exact to="/films">Films</Link>
+            <div>
+                <p id="navbar">
+                    <Link className="App-link" exact to="/">Home</Link>
+                    <Link className="App-link" exact to="/films">Films</Link>
+                    <Link className="App-link" exact to="/vehicles">Vehicles</Link>
+                    <Link className="App-link" exact to="/locations">Locations</Link>
+                </p>
+            </div>
+            
         </div>
     )
 }

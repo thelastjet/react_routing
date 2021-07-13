@@ -1,14 +1,23 @@
-import { Link } from "react-router-dom";
+import logo from '../images/logo.png';
 
 function Home(props) {
     return (
         <div>
             <h1>Home</h1>
-            <p>Click on the "Films" link to see the films made by Studio Ghibli and the "People" link to see all of the people behind the work.</p>
-
-            <Link className="App-link" exact to="films">Films</Link>
-            <Link className="App-link" exact to="people">People</Link>
-        </div>
+            <p id="homeParagraph">
+                Studio Ghibli Inc. was founded in 1985 by animators and directors Miyazaki 
+                Hayao and Takahata Isao and producer Suzuki Toshio.
+                It is a Japanese animation film studio headquartered in Koganei, Tokyo. 
+                The studio is best known for its animated feature films, and has also produced
+                several short films, television commercials,
+                and one television film.
+            </p>
+            <p id="homeParagraph">Click on the links to see the films made by Studio Ghibli, the people behind the
+             work, vehicles in the movies, and locations of the movies.
+            </p>
+            
+            <img src={logo} alt="logo" />
+        </div>      
     )
 }
 

@@ -19,16 +19,21 @@ function Films(props) {
                     return (
                         <div key={film.key}>
                             <hr />
-                            <h2>{film.original_title} - Original Title</h2>
-                            <h2>{film.title} - English Title</h2>
-                            <p>{film.release_date} - Movie Release Date</p>
-                            <p>{film.rt_score} - Rotten Tomato Score</p>
+                            <h2>Original Title - {film.original_title}</h2>
+                            <h2>English Title - {film.title}</h2>
+                            <p id="filmsParagraph">Movie Release Date - {film.release_date}</p>
+                            <p id="filmsParagraph">Rotten Tomato Score - {film.rt_score}</p>
                         </div>);
                 })}
             </div>
-        
-            <Link className="App-link" exact to="/">Home</Link>
-            <Link className="App-link" exact to="/people">People</Link>
+            <div>
+                <p id="navbar">
+                    <Link className="App-link" exact to="/">Home</Link>
+                    <Link className="App-link" exact to="/people">People</Link>
+                    <Link className="App-link" exact to="/vehicles">Vehicles</Link>
+                    <Link className="App-link" exact to="/locations">Locations</Link>
+                </p>
+            </div>
         </div>
     )
 }
