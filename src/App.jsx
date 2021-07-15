@@ -1,37 +1,21 @@
 import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './Navbar';
-import Films from './Pages/Films';
-import Home from './Pages/Home';
-import People from './Pages/People';
-import Vehicles from './Pages/Vehicles';
-import Locations from './Pages/Locations';
+import Navbar from './page-components/Navbar';
+import { routes } from './data/routes';
 
-
-const App = () => {
+const App = (props) => {
 
   return (
     
     <BrowserRouter>
-      <h1>Studio Ghibli API</h1>
-      <main className="app">
-        <Navbar />
+      <Navbar />
+      <main className="container my-3 bg-main">
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/films">
-            <Films />
-          </Route>
-          <Route path="/people">
-            <People />
-          </Route>
-          <Route path="/vehicles">
-            <Vehicles />
-          </Route>
-          <Route path="/locations">
-            <Locations />
-          </Route>
+          {routes.list.map((route, idx) => (
+            <Route key={idx} exact path={route.path}>
+              {(props) => <route.component {...props}/>}
+            </Route>
+          ))}
         </Switch>
       </main>
     </BrowserRouter>

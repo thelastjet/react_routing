@@ -18,22 +18,13 @@ function Vehicles(props) {
             <div>
                 {vehicles.map((vehicle) => {
                     return (
-                        <div>
+                        <div className="card">
                             <h4 key={vehicle.key}>Name:  {vehicle.name}</h4>
                             <h4>Description:  {vehicle.description}</h4>
                             <h4>Class:  {vehicle.vehicle_class}</h4>
-                            <hr />
                         </div>
                     );
                 })}
-            </div>
-            <div>
-                <p id="navbar">
-                    <Link className="App-link" exact to="/">Home</Link>
-                    <Link className="App-link" exact to="/films">Films</Link>
-                    <Link className="App-link" exact to="/people">People</Link>
-                    <Link className="App-link" exact to="/locations">Locations</Link>
-                </p>
             </div>
         </div>
     )

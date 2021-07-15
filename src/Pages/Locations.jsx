@@ -18,24 +18,17 @@ function Locations(props) {
             <div>
                 {locations.map((location) => {
                     return (
-                        <div>
+                        <div className="card">
                             <h4 key={location.key}>Name:  {location.name}</h4>
                             <h4>Climate:  {location.climate}</h4>
                             <h4>Terrain:  {location.terrain}</h4>
-                            <hr />
+                            <button>
+                                <Link to={`/locations/${location.id}`}>View</Link>
+                            </button>
                         </div>
                     );
                 })}
             </div>
-            <div>
-                <p id="navbar">
-                    <Link className="App-link" exact to="/">Home</Link>
-                    <Link className="App-link" exact to="/films">Films</Link>
-                    <Link className="App-link" exact to="/people">People</Link>
-                    <Link className="App-link" exact to="/vehicles">Vehicles</Link>
-                </p>
-            </div>
-            
         </div>
     )
 }
